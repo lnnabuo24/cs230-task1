@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InkedLin</title>
+</head>
+<body>
+    
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
+    <!--pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"-->
+    <!-- ^ apparently that makes phone numbers follow a specific format -->
+    <!-- im guessing 3 numbers that go from 0 to 9, another 3 numbers that go from 0 to 9, and 4 numbers that go from 0 to 9 -->
+    
+    <p>thank you for supporting the job searching site i made 5 seconds ago</p>
+    <form>
+        <label>
+            first name
+            <input type="text" required id="firstName">
+        </label>
+        
+        <label>
+            last name
+            <input type="text" required id="lastName">
+        </label>
+        
+        <div></div>
+        
+        <label>
+            email address please
+            <input type="email" required id="emailAddress">
+        </label>
+        
+        <label>
+            phone number (optional) (123-456-7890)
+            <input type="tel" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </label>
+        
+        <div>now ill need some stuff for your profile</div>
+        
+        <label>
+            enter a color here for your profile (you could probably change this later if this site was real)
+            <input type="color" id="profileColor">
+        </label>
+        
+        <div>you are...</div>
+        
+        <label>
+            looking for work (employee)
+            <input type="radio" name="yeeSlashYer" checked id="isEmployee">
+        </label>
+        <label>
+            looking for employees (employer)
+            <input type="radio" name="yeeSlashYer" id="isEmployer">
+        </label>
+        
+        <div></div>
+        
+        <label>
+            (for the employees) resume as well please
+            <input type="file" id="employeeResume">
+        </label>
+        
+        <div></div>
+        
+        <label>
+            how many open positions or applicants do you want to see on one page (1-100)
+            <input type="number" min="1" max="100" value="25" id="itemsPerPage">
+        </label>
+        
+        <div></div>
+        
+        <label>
+            feed automatic update frequency (higher is more often, technically a range of 1-10)
+            <input type="range" value="4" min="1" max="10" id="updateFrequency">
+        </label>
+        
+        <div></div>
+        
+        <label>
+            done?
+            <input type="submit">
+        </label>
+    </form>
+    
+    <div></div>
+    <hr>
+    
+    <p>and thank you for also taking my optional survey itll be just a few questions</p>
+    <form>
+        
+        <label>
+            rate the site (1-5 stars)
+            <input type="number" min="1" max="5" value="5" id="starRating">
+        </label>
+        
+        <label>
+            do you have any feedback (complaints) about the site (compliments will be not thrown away)
+            <input type="text" id="textFeedback">
+        </label>
+        
+        <div>schrodinger's cat is...</div>
+        
+        <label>
+            alive
+            <input type="checkbox" name="cat" id="schrodingersCatIsAlive">
+        </label>
+        
+        <label>
+            dead
+            <input type="checkbox" name="cat" id="schrodingersCatIsDead">
+        </label>
+        
+        <div></div>
+        
+        <label>
+            <input type="submit">
+        </label>
+        
+    </form>
+    
+    
+    
+</body>
+</html>
